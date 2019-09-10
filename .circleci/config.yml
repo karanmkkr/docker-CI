@@ -21,6 +21,8 @@ jobs:
   #     - checkout
   #     - run: <command>
   test:
+    docker:
+      - image: circleci/<language>:<version TAG>
     override:
       - mocha
     steps:
