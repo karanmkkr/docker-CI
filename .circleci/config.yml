@@ -23,6 +23,9 @@ jobs:
   test:
     override:
       - mocha
+    steps:
+      - checkout
+      - run: <command>
 workflows:
   version: 2
   build_and_test:
